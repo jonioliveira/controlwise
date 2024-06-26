@@ -1,0 +1,29 @@
+<tr
+  data-controller="items"
+  data-action="click->items#goToItem"
+  data-items-target="row"
+  role="button"
+  data-id="items/<%= item.id %>"
+  class="transition duration-300 ease-in-out hover:bg-gray-100">
+  <td class="py-2 border-b border-gray-300">
+    <%= item.name %>
+  </td>
+  <td class="py-2 border-b border-gray-300">
+    <%= item.description %>
+  </td>
+  <td class="py-2 border-b border-gray-300">
+    <%= item.unit %>
+  </td>
+  <td class="py-2 border-b border-gray-300">
+    <%= number_to_currency(item.price, unit:"€", locale: :pt) %>
+  </td>
+  <td class="py-2 border-b border-gray-300">
+    <%= item.margin %> %
+  </td>
+  <td class="py-2 border-b border-gray-300">
+    <%= item.vat %> %
+  </td>
+  <td class="py-2 border-b border-gray-300">
+    <%= item.updated_at.strftime("%d %b %Y") %>
+  </td>
+</tr>

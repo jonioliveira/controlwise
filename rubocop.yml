@@ -1,0 +1,37 @@
+require:
+  - rubocop-factory_bot
+  - rubocop-packs
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  TargetRailsVersion: 7.1
+
+Style/MethodCallWithArgsParentheses:
+  Exclude:
+    - "db/migrate/**/*"
+
+Layout/LineLength:
+  Exclude:
+    - "config/initializers/**"
+
+Sorbet/FalseSigil:
+  Enabled: false
+
+Packs/ClassMethodsAsPublicApis:
+  Enabled: true
+
+RSpec/SpecFilePathFormat:
+  CustomTransform:
+    RabbitMQ: rabbitmq
+
+# Cop is deprecated and replaced by RSpec/SpecFilePathSuffix and RSpec/SpecFilePathFormat
+RSpec/FilePath:
+  Enabled: false

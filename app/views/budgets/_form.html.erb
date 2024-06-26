@@ -1,0 +1,84 @@
+<%= form_with(model: budget, class: "contents") do |form| %>
+  <% if budget.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(budget.errors.count, "error") %> prohibited this budget from being saved:</h2>
+
+      <ul>
+        <% budget.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :margin %>
+    <%= form.number_field :margin, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full", id: "budgetMargin" %>
+  </div>
+
+  <div class="my-5">
+    <div class="flex justify-between items-center">
+        <span class="block mb-1"><%= t(".items") %></span>
+        <button id="addItemButton" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
+            Add Item
+        </button>
+    </div>
+
+    <table id="budgetItemsTable" class="min-w-full leading-normal mt-4">
+      <thead>
+        <tr>
+          <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Name
+          </th>
+          <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Price
+          </th>
+          <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Margin
+          </th>
+          <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Unit
+          </th>
+          <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Quantity
+          </th>
+            <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Total
+          </th>
+          <th class="py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+            Action
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Added items will appear here -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" class="text-right py-3 border-t-2 border-gray-200 text-xs font-semibold uppercase tracking-wider">Total Budget</td>
+          <td id="totalBudget" class="py-3 border-t-2 border-gray-200 text-xs font-semibold uppercase tracking-wider">0.00</td>
+          <td class="py-3 border-t-2 border-gray-200"></td>
+        </tr>
+      </tfoot>
+</table>
+
+  <!-- Hidden input field to store items data -->
+  <%= form.hidden_field :items_data, id: "itemsData" %>
+
+  </div>
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+
+<%= render "modal" %>

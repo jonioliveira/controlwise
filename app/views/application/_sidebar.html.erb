@@ -1,0 +1,34 @@
+<div>
+  <%= link_to root_path, class: "inline-flex items-center" do %>
+    <%= image_tag("controlwise-img.png", alt: "controlwise", class: "w-1/6") %>
+    <span class="ml-2 w-3 company-logo">controlwise.io</span>
+  <% end %>
+  <nav>
+    <ul class="mt-8">
+      <%= link_to root_path, class: "inline-flex items-center p-2 mb-1 hover:bg-emerald-500 rounded w-full #{'bg-emerald-500' if current_page?(root_path)}" do %>
+        <li class="w-full flex items-center">
+          <%= heroicon "home", variant: :outline, options: { class: "stroke-2 w-5 h-5" } %>
+          <span class="ml-2">Dashboard</span>
+        </li>
+      <% end %>
+      <%= link_to budgets_path, class: "inline-flex items-center p-2 mb-1 hover:bg-emerald-500 rounded w-full #{'bg-emerald-500' if current_page?(budgets_path)}" do %>
+        <li class="w-full flex items-center">
+          <%= heroicon "clipboard-document", variant: :outline, options: { class: "stroke-2 w-5 h-5" } %>
+          <span class="ml-2">Budgets</span>
+        </li>
+      <% end %>
+      <%= link_to items_path, class: "inline-flex items-center p-2 mb-1 hover:bg-emerald-500 rounded w-full #{'bg-emerald-500' if current_page?(items_path)}" do %>
+        <li class="w-full <%= "bg-emerald-500" if current_page?(items_path)%> flex items-center">
+          <%= heroicon "cube", variant: :outline, options: { class: "stroke-2 w-5 h-5" } %>
+          <span class="ml-2">Items</span>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</div>
+<div class="p-2 hover:bg-emerald-500 rounded">
+  <%=link_to root_path, class:"inline-flex items-center" do %>
+    <%= heroicon "cog-8-tooth", variant: :outline,  options: { class: "stroke-2 w-5 h-5" }%>
+    <span class="ml-2">Settings</span>
+  <%end%>
+</div>

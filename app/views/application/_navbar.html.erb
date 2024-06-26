@@ -1,0 +1,23 @@
+<nav class="bg-white shadow-md p-4 sticky top-0 flex justify-between items-center">
+  <!-- Search Box -->
+  <div class="flex items-center">
+    <%= form_with url: search_path, method: :get, class: "flex items-center" do %>
+        <%= heroicon "magnifying-glass", variant: :outline,  options: { class: "stroke-1 stroke-gray-600 w-5 h-5" } %>
+        <input id="search-field" type="text" name="query" placeholder="Search..." class="px-2 py-2 border-transparent focus:border-transparent focus:ring-0">
+    <% end %>
+  </div>
+
+  <!-- User Email and Dropdown -->
+  <div class="flex items-center space-x-4">
+      <div class="border-r border-gray-300 h-6"></div>
+      <div class="relative">
+          <button id="userMenuButton" class="flex items-center space-x-2 focus:outline-none">
+              <span class="text-gray-700"><%= current_user.email %></span>
+              <%= heroicon "chevron-down", variant: :outline,  options: { class: "stroke-1 stroke-gray-600 w-5 h-5" } %>
+          </button>
+          <div id="userMenu" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a>
+          </div>
+      </div>
+  </div>
+</nav>

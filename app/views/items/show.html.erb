@@ -1,0 +1,65 @@
+<div class="mx-auto md:w-2/3 w-full flex">
+  <div class="mx-auto">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+
+    <%= render partial:"item", locals: { item: @item } %>
+
+    <p class="my-5">
+      <strong class="block font-medium mb-1"><%= t(".created_at") %>:</strong>
+      <%= l @item.created_at, format: :long %>
+    </p>
+
+    <p class="my-5">
+      <strong class="block font-medium mb-1"><%= t(".updated_at") %>:</strong>
+      <%=  l @item.created_at, format: :long %>
+    </p>
+
+    <%= link_to t(".edit"), edit_item_path(@item), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to t(".back"), items_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <div class="inline-block ml-2">
+      <%= button_to t(".destroy"), @item, method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+    </div>
+
+    <% require 'yaml' %>
+    <% @item.versions.each do |version| %>
+      <% next if version.event == "create" %>
+      <div class="my-5">
+        <strong class="block font-medium mb-1"><%= t(".updated_at") %>:</strong>
+        <p><%= l version.created_at, format: :long %></p>
+        <strong class="block font-medium mb-1"><%= t(".by") %>:</strong>
+        <p><%= version.whodunnit %></p>
+        <strong class="block font-medium mb-1"><%= t(".changes") %>:</strong>
+        <% @versions.each do |entry| %>
+          <% version = entry[:version] %>
+          <% changes = entry[:changes] %>
+          <% next if version.event == "create" %>
+          <div class="my-5">
+            <strong class="block font-medium mb-1"><%= t(".updated_at") %>:</strong>
+            <p><%= l version.created_at, format: :long %></p>
+            <strong class="block font-medium mb-1"><%= t(".by") %>:</strong>
+            <p><%= version.whodunnit %></p>
+            <strong class="block font-medium mb-1"><%= t(".changes") %>:</strong>
+            <% if changes.present? %>
+              <ul>
+                <% changes.each do |key, value| %>
+                  <li><%= key %>:
+                    <% if value.is_a?(Array) %>
+                      <%= value.first %> -> <%= value.last %>
+                    <% else %>
+                      <%= value %>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            <% else %>
+              <p>No changes available.</p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+  </div>
+</div>

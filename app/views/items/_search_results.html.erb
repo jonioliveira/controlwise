@@ -1,0 +1,23 @@
+<% if @items.any? %>
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.description %></td>
+      <td><%= item.price %></td>
+      <td>
+        <button class="add-item-button bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded" 
+          data-item-id="<%= item.id %>" 
+          data-item-name="<%= item.name %>" 
+          data-item-price="<%= item.price %>" 
+          data-item-unit="<%= item.unit %>" 
+          data-item-margin="<%= item.margin %>">
+          Add
+        </button>
+      </td>
+    </tr>
+  <% end %>
+<% else %>
+  <tr>
+    <td colspan="4">No items found</td>
+  </tr>
+<% end %>

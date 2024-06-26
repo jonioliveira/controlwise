@@ -1,0 +1,25 @@
+<table class="w-full text-left">
+    <thead class="uppercase">
+    <tr>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".name")%></th>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".description")%></th>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".unit")%></th>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".price")%></th>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".margin")%></th>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".vat")%></th>
+        <th scope="col" class="py-3 border-b border-gray-300"><%= t(".updated_at")%></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% items.each do |item| %>
+    <%= render partial: "items_row", locals: {
+            item: item,
+        } %>
+    <% end %>
+    </tbody>
+</table>
+<% if pagy.pages > 1 %>
+<div class="d-flex justify-content-center">
+<%== pagy_bootstrap_nav(pagy) %>
+</div>
+<% end %>

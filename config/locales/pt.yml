@@ -1,0 +1,156 @@
+pt:
+  devise:
+    sessions:
+      signed_in: "Login efectuado com sucesso."
+      signed_out: "Logout efectuado com sucesso."
+    passwords:
+      updated: "Password alterada com sucesso."
+      send_instructions: "Vai receber um email com instruções para alterar a password."
+    confirmations:
+      confirmed: "Conta confirmada com sucesso."
+      send_instructions: "Vai receber um email com instruções para confirmar a conta."
+    unlocks:
+      send_instructions: "Vai receber um email com instruções para desbloquear a conta."
+      unlocked: "Conta desbloqueada com sucesso."
+    failure:
+      already_authenticated: "Já tem sessão iniciada."
+      unauthenticated: "Tem de iniciar sessão ou registar-se antes de continuar."
+      unconfirmed: "Tem de confirmar a conta antes de continuar."
+      locked: "A conta está bloqueada."
+      invalid: "Email ou password inválidos."
+      invalid_token: "Token inválido."
+      timeout: "Sessão expirada. Por favor, inicie sessão novamente."
+      inactive: "A conta está inativa."
+      not_found_in_database: "Email não encontrado."
+      user:
+        unregistered: "Email não encontrado."
+        not_found: "Email não encontrado."
+        not_locked: "A conta não está bloqueada."
+        not_saved: "Erro ao guardar a conta."
+        already_confirmed: "A conta já está confirmada."
+        confirmation_period_expired: "O período de confirmação expirou."
+        email_changed: "Email alterado com sucesso."
+        email_needs_confirmation: "Tem de confirmar o novo email antes de continuar."
+        password_needs_confirmation: "Tem de confirmar a nova password antes de continuar."
+        password_not_required: "Não é necessário password."
+        new_password_required: "Tem de escolher uma nova password."
+        password_already_set: "Password já definida."
+        password_reset: "Password alterada com sucesso."
+        password_updated: "Password alterada com sucesso."
+        signed_up: "Registo efetuado com sucesso."
+        signed_up_but_inactive: "Registo efetuado com sucesso, mas a conta está inativa."
+        signed_up_but_locked: "Registo efetuado com sucesso, mas a conta está bloqueada."
+        signed_up_but_unconfirmed: "Registo efetuado com sucesso, mas a conta não está confirmada."
+        signed_out: "Logout efetuado com sucesso."
+        signed_out_but_locked: "Logout efetuado com sucesso, mas a conta está bloqueada."
+        signed_out_but_unconfirmed: "Logout efetuado com sucesso, mas a conta não está confirmada."
+    registrations:
+      signed_up: "Registo efetuado com sucesso."
+      updated: "Conta atualizada com sucesso."
+      destroyed: "Conta eliminada com sucesso."
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+    month_names:
+      [
+        ~,
+        Janeiro,
+        Fevereiro,
+        Março,
+        Abril,
+        Maio,
+        Junho,
+        Julho,
+        Agosto,
+        Setembro,
+        Outubro,
+        Novembro,
+        Dezembro,
+      ]
+  time:
+    formats:
+      default: "%d-%m-%Y %H:%M"
+      short: "%d %b %H:%M"
+      long: "%d de %B de %Y %H:%M"
+  helpers:
+    submit:
+      item:
+        create: "Criar item"
+        update: "Atualizar item"
+      budget:
+        create: "Criar orçamento"
+        update: "Atualizar orçamento"
+  activerecord:
+    attributes:
+      item:
+        name: "Nome"
+        description: "Descrição"
+        price: "Preço"
+        quantity: "Quantidade"
+        vat: "IVA"
+        margin: "Margem"
+        unit: "Unidade"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      budget:
+        name: "Nome"
+        description: "Descrição"
+        total: "Total"
+        margin: "Margem"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+  items:
+    items_table:
+      name: "Nome"
+      description: "Descrição"
+      price: "Preço"
+      quantity: "Quantidade"
+      vat: "IVA"
+      margin: "Margem"
+      unit: "Unidade"
+      created_at: "Criado em"
+      updated_at: "Atualizado em"
+    item:
+      name: "Nome"
+      description: "Descrição"
+      price: "Preço"
+      quantity: "Quantidade"
+      vat: "IVA"
+      margin: "Margem"
+      unit: "Unidade"
+      created_at: "Criado em"
+      updated_at: "Atualizado em"
+    index:
+      title: "Lista de itens"
+      new: "Novo item"
+      edit: "Editar"
+      destroy: "Destruir"
+      show: "Detalhes"
+    new:
+      title: "Novo item"
+      back: "Voltar a items"
+    edit:
+      title: "Editar item"
+    show:
+      title: "Detalhes do item"
+      edit: "Editar item"
+      back: "Voltar a items"
+      price: "Preço"
+      destroy: "Destruir item"
+      created_at: "Criado em"
+      updated_at: "Atualizado em"
+  budgets:
+    index:
+      title: "Lista de orçamentos"
+      new: "Novo orçamento"
+      edit: "Editar"
+      destroy: "Destruir"
+    new:
+      title: "Novo orçamento"
+      back: "Voltar a orçamentos"
+    edit:
+      title: "Editar orçamento"
+    show:
+      title: "Detalhes do orçamento"

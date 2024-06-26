@@ -1,0 +1,31 @@
+<div id="<%= dom_id item %>">
+  <p class="my-5">
+    <h1 class="font-bold text-4xl mb-1"><%= item.name.capitalize %></h1>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1"><%= t(".description") %>:</strong>
+    <%= item.description.capitalize %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1"><%= t(".unit") %>:</strong>
+    <%= item.unit %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1"><%= t(".price") %>:</strong>
+    <%= item.price %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1"><%= t(".margin") %>:</strong>
+    <%= item.margin %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1"><%= t(".vat") %>:</strong>
+    <%= item.vat %>
+  </p>
+
+</div>
