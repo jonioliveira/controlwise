@@ -128,7 +128,7 @@ export default function NotificationsSettingsPage() {
     try {
       const result = await testWhatsApp.mutateAsync({
         phone_number: testPhone,
-        message: 'Teste de configuração WhatsApp do ControleWise.',
+        message: 'Teste de configuração WhatsApp do ControlWise.',
       })
       setTestResult({
         success: result.success,

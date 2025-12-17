@@ -441,7 +441,7 @@ function TemplatePreviewModal({
     project_name: 'Remodelação Cozinha',
     budget_total: '15000.00',
     budget_number: 'ORC-2025-001',
-    budget_link: 'https://app.controlewise.pt/budgets/123',
+    budget_link: 'https://app.controlwise.pt/budgets/123',
     organization_name: 'Clínica Exemplo',
   }
 

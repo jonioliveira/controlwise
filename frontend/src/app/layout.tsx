@@ -6,7 +6,7 @@ import { Providers } from '@/components/providers'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ControleWise - Gestão de Negócios Simplificada',
+  title: 'ControlWise - Gestão de Negócios Simplificada',
   description: 'Plataforma completa para gestão de clientes, orçamentos e projetos. Workflows personalizáveis para qualquer tipo de negócio.',
 }
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "ControleWise - Business Management Simplified",
+    "title": "ControlWise - Business Management Simplified",
     "description": "Complete platform for managing clients, budgets, and projects. Customizable workflows for any type of business."
   },
   "header": {
@@ -44,7 +44,7 @@
   },
   "industries": {
     "title": "For All Types of Business",
-    "subtitle": "Adapt ControleWise to the specific needs of your industry",
+    "subtitle": "Adapt ControlWise to the specific needs of your industry",
     "construction": {
       "name": "Construction",
       "description": "Job management, detailed budgets, work sheets, and tracking of construction and renovation projects.",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Ready to simplify your business management?",
-    "subtitle": "Join hundreds of companies already using ControleWise",
+    "subtitle": "Join hundreds of companies already using ControlWise",
     "button": "Start Free"
   },
   "footer": {

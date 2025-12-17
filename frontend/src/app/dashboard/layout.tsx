@@ -108,7 +108,7 @@ export default function DashboardLayout({
           <div className="flex-shrink-0 px-4">
             <div className="flex items-center">
               <Building2 className="h-8 w-8 text-primary-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">ControleWise</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">ControlWise</span>
             </div>
             {organization && (
               <p className="mt-2 text-sm text-gray-500 truncate">{organization.name}</p>
@@ -171,7 +171,7 @@ export default function DashboardLayout({
           <div className="flex items-center min-w-0">
             <Building2 className="h-7 w-7 text-primary-600 flex-shrink-0" />
             <div className="ml-2 min-w-0">
-              <span className="text-lg font-bold text-gray-900">ControleWise</span>
+              <span className="text-lg font-bold text-gray-900">ControlWise</span>
               {organization && (
                 <p className="text-xs text-gray-500 truncate">{organization.name}</p>
               )}

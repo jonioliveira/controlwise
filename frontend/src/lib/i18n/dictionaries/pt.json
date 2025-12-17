@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "ControleWise - Gestão de Negócios Simplificada",
+    "title": "ControlWise - Gestão de Negócios Simplificada",
     "description": "Plataforma completa para gestão de clientes, orçamentos e projetos. Workflows personalizáveis para qualquer tipo de negócio."
   },
   "header": {
@@ -44,7 +44,7 @@
   },
   "industries": {
     "title": "Para Todos os Tipos de Negócio",
-    "subtitle": "Adapte o ControleWise às necessidades específicas do seu setor",
+    "subtitle": "Adapte o ControlWise às necessidades específicas do seu setor",
     "construction": {
       "name": "Construção",
       "description": "Gestão de obras, orçamentos detalhados, folhas de obra e acompanhamento de projetos de construção e renovação.",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Pronto para simplificar a gestão do seu negócio?",
-    "subtitle": "Junte-se a centenas de empresas que já usam o ControleWise",
+    "subtitle": "Junte-se a centenas de empresas que já usam o ControlWise",
     "button": "Começar Grátis"
   },
   "footer": {

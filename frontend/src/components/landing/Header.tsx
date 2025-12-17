@@ -30,7 +30,7 @@ export function Header({ dict, locale }: HeaderProps) {
             <div className="w-9 h-9 bg-primary-600 rounded-lg flex items-center justify-center">
               <Layers className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">ControleWise</span>
+            <span className="text-xl font-bold text-gray-900">ControlWise</span>
           </Link>
 
           {/* Desktop Navigation */}

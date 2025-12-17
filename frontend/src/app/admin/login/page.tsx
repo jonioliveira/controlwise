@@ -31,7 +31,7 @@ export default function AdminLoginPage() {
             System Admin
           </h2>
           <p className="mt-2 text-center text-sm text-gray-400">
-            ControleWise Administration
+            ControlWise Administration
           </p>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -54,7 +54,7 @@ export default function AdminLoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="admin@controlewise.io"
+                placeholder="admin@controlwise.io"
               />
             </div>
             <div>

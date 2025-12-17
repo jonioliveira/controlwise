@@ -35,7 +35,7 @@ export default function RegisterPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center space-x-2 mb-6">
             <Building2 className="h-10 w-10 text-primary-600" />
-            <span className="text-3xl font-bold text-gray-900">ControleWise</span>
+            <span className="text-3xl font-bold text-gray-900">ControlWise</span>
           </Link>
           <h1 className="text-2xl font-bold text-gray-900">Criar nova conta</h1>
           <p className="text-gray-600 mt-2">

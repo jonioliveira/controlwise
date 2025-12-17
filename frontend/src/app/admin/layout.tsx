@@ -82,7 +82,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <div className="fixed inset-y-0 left-0 w-64 bg-gray-800">
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-center h-16 px-4 bg-gray-900">
-            <span className="text-xl font-bold text-white">ControleWise</span>
+            <span className="text-xl font-bold text-white">ControlWise</span>
             <span className="ml-2 px-2 py-1 text-xs bg-red-600 text-white rounded">Admin</span>
           </div>
 

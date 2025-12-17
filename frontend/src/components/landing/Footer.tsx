@@ -30,7 +30,7 @@ export function Footer({ dict, locale }: FooterProps) {
               <div className="w-9 h-9 bg-primary-600 rounded-lg flex items-center justify-center">
                 <Layers className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">ControleWise</span>
+              <span className="text-xl font-bold text-white">ControlWise</span>
             </Link>
             <p className="text-gray-500 max-w-xs mb-6">
               {dict.metadata.description}
@@ -121,7 +121,7 @@ export function Footer({ dict, locale }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="py-6 border-t border-gray-800 text-center text-sm text-gray-500">
-          <p>&copy; {currentYear} ControleWise. {dict.footer.rights}</p>
+          <p>&copy; {currentYear} ControlWise. {dict.footer.rights}</p>
         </div>
       </div>
     </footer>
