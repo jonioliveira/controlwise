@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS audit_logs;
+DROP TABLE IF EXISTS notifications;
+DROP TABLE IF EXISTS photos;
+DROP TABLE IF EXISTS payments;
+DROP TABLE IF EXISTS tasks;
+DROP TABLE IF EXISTS projects;
+DROP TABLE IF EXISTS budget_items;
+DROP TABLE IF EXISTS budgets;
+DROP TABLE IF EXISTS worksheet_items;
+DROP TABLE IF EXISTS worksheets;
+DROP TABLE IF EXISTS clients;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS organizations;
+
+DROP FUNCTION IF EXISTS update_updated_at_column();
+DROP EXTENSION IF EXISTS "uuid-ossp";

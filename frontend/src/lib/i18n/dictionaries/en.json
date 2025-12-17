@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "ControleWise - Business Management Simplified",
+    "description": "Complete platform for managing clients, budgets, and projects. Customizable workflows for any type of business."
+  },
+  "header": {
+    "login": "Login",
+    "startFree": "Start Free"
+  },
+  "hero": {
+    "title": "Manage Your Business,",
+    "titleHighlight": "Your Way",
+    "subtitle": "Flexible platform for managing clients, budgets, and projects. Create custom workflows that adapt to your business, not the other way around.",
+    "cta": "Start Free",
+    "demo": "See Demo"
+  },
+  "features": {
+    "title": "Everything you need to grow",
+    "subtitle": "Powerful and flexible tools for any type of business",
+    "clients": {
+      "title": "Client Management",
+      "description": "Complete CRM to track your clients, interaction history, and business opportunities."
+    },
+    "workflows": {
+      "title": "Customizable Workflows",
+      "description": "Create unique workflows for your business. Define stages, statuses, and automations."
+    },
+    "budgets": {
+      "title": "Budgets & Proposals",
+      "description": "Generate professional quotes, send for approval, and track status in real-time."
+    },
+    "projects": {
+      "title": "Project Management",
+      "description": "Track the progress of your projects, tasks, and deliverables in a visual and intuitive way."
+    },
+    "payments": {
+      "title": "Payment Control",
+      "description": "Manage invoicing, pending payments, and keep cash flow under control."
+    },
+    "multiTenant": {
+      "title": "Multi-Organizations",
+      "description": "Manage multiple companies or teams on a single platform with isolated data."
+    }
+  },
+  "industries": {
+    "title": "For All Types of Business",
+    "subtitle": "Adapt ControleWise to the specific needs of your industry",
+    "construction": {
+      "name": "Construction",
+      "description": "Job management, detailed budgets, work sheets, and tracking of construction and renovation projects.",
+      "workflow": "Client → Visit → Quote → Job → Delivery"
+    },
+    "healthcare": {
+      "name": "Healthcare",
+      "description": "Patient management, scheduling, treatments, and billing for clinics, offices, and healthcare professionals.",
+      "workflow": "Patient → Appointment → Treatment → Follow-up"
+    },
+    "freelancers": {
+      "name": "Freelancers",
+      "description": "Client organization, proposals, projects, and payments for self-employed professionals and consultants.",
+      "workflow": "Lead → Proposal → Project → Invoice"
+    }
+  },
+  "workflow": {
+    "title": "Your Workflow, Your Rules",
+    "subtitle": "Define the stages that make sense for your business. No limitations, no forced adaptations.",
+    "step1": "Define your stages",
+    "step2": "Configure statuses and transitions",
+    "step3": "Add automations",
+    "step4": "Track in real-time"
+  },
+  "cta": {
+    "title": "Ready to simplify your business management?",
+    "subtitle": "Join hundreds of companies already using ControleWise",
+    "button": "Start Free"
+  },
+  "footer": {
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "demo": "Demo",
+    "company": "Company",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "ControleWise - Gestão de Negócios Simplificada",
+    "description": "Plataforma completa para gestão de clientes, orçamentos e projetos. Workflows personalizáveis para qualquer tipo de negócio."
+  },
+  "header": {
+    "login": "Entrar",
+    "startFree": "Começar Grátis"
+  },
+  "hero": {
+    "title": "Gerencie Seu Negócio,",
+    "titleHighlight": "Do Seu Jeito",
+    "subtitle": "Plataforma flexível para gestão de clientes, orçamentos e projetos. Crie workflows personalizados que se adaptam ao seu negócio, não o contrário.",
+    "cta": "Começar Grátis",
+    "demo": "Ver Demo"
+  },
+  "features": {
+    "title": "Tudo o que precisa para crescer",
+    "subtitle": "Ferramentas poderosas e flexíveis para qualquer tipo de negócio",
+    "clients": {
+      "title": "Gestão de Clientes",
+      "description": "CRM completo para acompanhar seus clientes, histórico de interações e oportunidades de negócio."
+    },
+    "workflows": {
+      "title": "Workflows Personalizáveis",
+      "description": "Crie fluxos de trabalho únicos para o seu negócio. Defina etapas, status e automações."
+    },
+    "budgets": {
+      "title": "Orçamentos e Propostas",
+      "description": "Gere orçamentos profissionais, envie para aprovação e acompanhe o status em tempo real."
+    },
+    "projects": {
+      "title": "Gestão de Projetos",
+      "description": "Acompanhe o progresso dos seus projetos, tarefas e entregas de forma visual e intuitiva."
+    },
+    "payments": {
+      "title": "Controlo de Pagamentos",
+      "description": "Gerencie faturação, pagamentos pendentes e mantenha o fluxo de caixa sob controlo."
+    },
+    "multiTenant": {
+      "title": "Multi-Organizações",
+      "description": "Gerencie múltiplas empresas ou equipas numa única plataforma com dados isolados."
+    }
+  },
+  "industries": {
+    "title": "Para Todos os Tipos de Negócio",
+    "subtitle": "Adapte o ControleWise às necessidades específicas do seu setor",
+    "construction": {
+      "name": "Construção",
+      "description": "Gestão de obras, orçamentos detalhados, folhas de obra e acompanhamento de projetos de construção e renovação.",
+      "workflow": "Cliente → Visita → Orçamento → Obra → Entrega"
+    },
+    "healthcare": {
+      "name": "Saúde",
+      "description": "Gestão de pacientes, agendamentos, tratamentos e faturação para clínicas, consultórios e profissionais de saúde.",
+      "workflow": "Paciente → Consulta → Tratamento → Seguimento"
+    },
+    "freelancers": {
+      "name": "Freelancers",
+      "description": "Organização de clientes, propostas, projetos e pagamentos para profissionais autónomos e consultores.",
+      "workflow": "Lead → Proposta → Projeto → Faturação"
+    }
+  },
+  "workflow": {
+    "title": "Seu Fluxo de Trabalho, Suas Regras",
+    "subtitle": "Defina as etapas que fazem sentido para o seu negócio. Sem limitações, sem adaptações forçadas.",
+    "step1": "Defina suas etapas",
+    "step2": "Configure status e transições",
+    "step3": "Adicione automações",
+    "step4": "Acompanhe em tempo real"
+  },
+  "cta": {
+    "title": "Pronto para simplificar a gestão do seu negócio?",
+    "subtitle": "Junte-se a centenas de empresas que já usam o ControleWise",
+    "button": "Começar Grátis"
+  },
+  "footer": {
+    "product": "Produto",
+    "features": "Funcionalidades",
+    "pricing": "Preços",
+    "demo": "Demo",
+    "company": "Empresa",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "rights": "Todos os direitos reservados."
+  }
+}

@@ -1,0 +1,7 @@
+export { Header } from './Header'
+export { Hero } from './Hero'
+export { Features } from './Features'
+export { Industries } from './Industries'
+export { WorkflowShowcase } from './WorkflowShowcase'
+export { CTA } from './CTA'
+export { Footer } from './Footer'
