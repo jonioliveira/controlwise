@@ -25,10 +25,10 @@ clean:
 
 # Database migrations (using golang-migrate)
 migrate-up:
-	migrate -path migrations -database "postgresql://controlewise:controlewise@localhost:5433/controlewise?sslmode=disable" up
+	migrate -path migrations -database "postgresql://controlwise:controlwise@localhost:5433/controlwise?sslmode=disable" up
 
 migrate-down:
-	migrate -path migrations -database "postgresql://controlewise:controlewise@localhost:5433/controlewise?sslmode=disable" down
+	migrate -path migrations -database "postgresql://controlwise:controlwise@localhost:5433/controlwise?sslmode=disable" down
 
 migrate-create:
 	@read -p "Enter migration name: " name; \

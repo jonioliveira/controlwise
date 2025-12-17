@@ -3,10 +3,10 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/controlewise/backend/internal/middleware"
-	"github.com/controlewise/backend/internal/models"
-	"github.com/controlewise/backend/internal/services"
-	"github.com/controlewise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/middleware"
+	"github.com/controlwise/backend/internal/models"
+	"github.com/controlwise/backend/internal/services"
+	"github.com/controlwise/backend/internal/utils"
 )
 
 type NotificationConfigHandler struct {
@@ -106,7 +106,7 @@ func (h *NotificationConfigHandler) TestWhatsApp(w http.ResponseWriter, r *http.
 		return
 	}
 
-	testMessage := "Esta e uma mensagem de teste do ControleWise. Se recebeu esta mensagem, a configuracao do WhatsApp esta correta!"
+	testMessage := "Esta e uma mensagem de teste do controlwise. Se recebeu esta mensagem, a configuracao do WhatsApp esta correta!"
 
 	_, err := h.whatsappService.SendMessage(r.Context(), orgID, req.PhoneNumber, testMessage, nil)
 	if err != nil {

@@ -3,7 +3,7 @@ package workflow
 import (
 	"testing"
 
-	"github.com/controlewise/backend/internal/models"
+	"github.com/controlwise/backend/internal/models"
 )
 
 func TestRenderTemplate(t *testing.T) {

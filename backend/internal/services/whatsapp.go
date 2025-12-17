@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/controlewise/backend/internal/database"
-	"github.com/controlewise/backend/internal/models"
+	"github.com/controlwise/backend/internal/database"
+	"github.com/controlwise/backend/internal/models"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5"
 )

@@ -3,10 +3,10 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/controlewise/backend/internal/middleware"
-	"github.com/controlewise/backend/internal/models"
-	"github.com/controlewise/backend/internal/services"
-	"github.com/controlewise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/middleware"
+	"github.com/controlwise/backend/internal/models"
+	"github.com/controlwise/backend/internal/services"
+	"github.com/controlwise/backend/internal/utils"
 )
 
 // OrganizationHandler

@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/controlewise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/utils"
 )
 
 // RequireSystemAdmin middleware blocks requests that don't come from system admins

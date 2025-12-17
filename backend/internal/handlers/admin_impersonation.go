@@ -7,11 +7,11 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/google/uuid"
 
-	"github.com/controlewise/backend/internal/middleware"
-	"github.com/controlewise/backend/internal/models"
-	"github.com/controlewise/backend/internal/services"
-	"github.com/controlewise/backend/internal/utils"
-	"github.com/controlewise/backend/internal/validator"
+	"github.com/controlwise/backend/internal/middleware"
+	"github.com/controlwise/backend/internal/models"
+	"github.com/controlwise/backend/internal/services"
+	"github.com/controlwise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/validator"
 )
 
 type AdminImpersonationHandler struct {

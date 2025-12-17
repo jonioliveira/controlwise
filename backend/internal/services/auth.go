@@ -5,9 +5,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/controlewise/backend/internal/config"
-	"github.com/controlewise/backend/internal/database"
-	"github.com/controlewise/backend/internal/models"
+	"github.com/controlwise/backend/internal/config"
+	"github.com/controlwise/backend/internal/database"
+	"github.com/controlwise/backend/internal/models"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
 	"golang.org/x/crypto/bcrypt"

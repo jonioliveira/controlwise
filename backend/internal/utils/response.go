@@ -6,7 +6,7 @@ import (
 	"io"
 	"net/http"
 
-	apperrors "github.com/controlewise/backend/internal/errors"
+	apperrors "github.com/controlwise/backend/internal/errors"
 )
 
 // Default max request body size (1MB)

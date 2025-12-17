@@ -3,10 +3,10 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/controlewise/backend/internal/middleware"
-	"github.com/controlewise/backend/internal/services"
-	"github.com/controlewise/backend/internal/utils"
-	"github.com/controlewise/backend/internal/validator"
+	"github.com/controlwise/backend/internal/middleware"
+	"github.com/controlwise/backend/internal/services"
+	"github.com/controlwise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/validator"
 )
 
 type AdminAuthHandler struct {

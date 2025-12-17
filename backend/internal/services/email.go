@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"net/smtp"
 
-	"github.com/controlewise/backend/internal/config"
+	"github.com/controlwise/backend/internal/config"
 )
 
 type EmailService struct {
@@ -30,7 +30,7 @@ func (s *EmailService) SendBudgetSent(to, clientName, budgetNumber string) error
 			<p>Foi criado um novo orçamento para si: <strong>%s</strong></p>
 			<p>Por favor, reveja o orçamento e informe-nos se tem alguma questão.</p>
 			<br>
-			<p>Obrigado,<br>A equipa ControleWise</p>
+			<p>Obrigado,<br>A equipa controlwise</p>
 		</body>
 		</html>
 	`, clientName, budgetNumber)
@@ -47,7 +47,7 @@ func (s *EmailService) SendBudgetApproved(to, managerName, budgetNumber string) 
 			<p>O orçamento <strong>%s</strong> foi aprovado pelo cliente!</p>
 			<p>Pode agora proceder com o início da obra.</p>
 			<br>
-			<p>Obrigado,<br>A equipa ControleWise</p>
+			<p>Obrigado,<br>A equipa controlwise</p>
 		</body>
 		</html>
 	`, managerName, budgetNumber)
@@ -64,7 +64,7 @@ func (s *EmailService) SendTaskAssigned(to, userName, taskTitle string) error {
 			<p>Foi-lhe atribuída uma nova tarefa: <strong>%s</strong></p>
 			<p>Por favor, aceda à plataforma para mais detalhes.</p>
 			<br>
-			<p>Obrigado,<br>A equipa ControleWise</p>
+			<p>Obrigado,<br>A equipa controlwise</p>
 		</body>
 		</html>
 	`, userName, taskTitle)
@@ -81,7 +81,7 @@ func (s *EmailService) SendPaymentDue(to, clientName, amount, dueDate string) er
 			<p>Este é um lembrete de que tem um pagamento pendente no valor de <strong>€%s</strong>.</p>
 			<p>Data de vencimento: <strong>%s</strong></p>
 			<br>
-			<p>Obrigado,<br>A equipa ControleWise</p>
+			<p>Obrigado,<br>A equipa controlwise</p>
 		</body>
 		</html>
 	`, clientName, amount, dueDate)
@@ -126,7 +126,7 @@ func getTemplate(name string) string {
 	// Default templates - could be loaded from files
 	templates := map[string]string{
 		"welcome": `
-			<h2>Bem-vindo ao ControleWise!</h2>
+			<h2>Bem-vindo ao controlwise!</h2>
 			<p>Obrigado por se registar.</p>
 		`,
 	}

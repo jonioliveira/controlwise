@@ -1,4 +1,4 @@
-# ControleWise.io
+# controlwise.io
 
 Sistema de orçamentação, controlo e gestão de obras com suporte multi-tenancy.
 
@@ -27,7 +27,7 @@ Sistema de orçamentação, controlo e gestão de obras com suporte multi-tenanc
 ## Estrutura do Projeto
 
 ```
-controlewise/
+controlwise/
 ├── backend/           # API Go
 ├── frontend/          # Next.js App
 ├── compose.yml        # Podman compose file

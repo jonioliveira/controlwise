@@ -81,9 +81,9 @@ func Load() (*Config, error) {
 		Database: DatabaseConfig{
 			Host:     getEnv("DB_HOST", "localhost"),
 			Port:     getEnv("DB_PORT", "5432"),
-			User:     getEnv("DB_USER", "controlewise"),
-			Password: getEnv("DB_PASSWORD", "controlewise"),
-			DBName:   getEnv("DB_NAME", "controlewise"),
+			User:     getEnv("DB_USER", "controlwise"),
+			Password: getEnv("DB_PASSWORD", "controlwise"),
+			DBName:   getEnv("DB_NAME", "controlwise"),
 			SSLMode:  getEnv("DB_SSL_MODE", "disable"),
 		},
 		Redis: RedisConfig{
@@ -100,7 +100,7 @@ func Load() (*Config, error) {
 			AWSRegion:          getEnv("AWS_REGION", "eu-west-1"),
 			AWSAccessKeyID:     getEnv("AWS_ACCESS_KEY_ID", ""),
 			AWSSecretAccessKey: getEnv("AWS_SECRET_ACCESS_KEY", ""),
-			S3Bucket:           getEnv("S3_BUCKET", "controlewise-files"),
+			S3Bucket:           getEnv("S3_BUCKET", "controlwise-files"),
 			MaxUploadSize:      getEnvAsInt64("MAX_UPLOAD_SIZE", 10485760), // 10MB default
 			AllowedFileTypes:   getEnvAsStringSlice("ALLOWED_FILE_TYPES", "image/jpeg,image/png,image/webp,application/pdf"),
 		},
@@ -109,7 +109,7 @@ func Load() (*Config, error) {
 			SMTPPort:     getEnv("SMTP_PORT", "587"),
 			SMTPUser:     getEnv("SMTP_USER", ""),
 			SMTPPassword: getEnv("SMTP_PASSWORD", ""),
-			SMTPFrom:     getEnv("SMTP_FROM", "noreply@controlewise.io"),
+			SMTPFrom:     getEnv("SMTP_FROM", "noreply@controlwise.io"),
 		},
 		App: AppConfig{
 			FrontendURL: getEnv("FRONTEND_URL", "http://localhost:3000"),

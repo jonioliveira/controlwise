@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/controlewise/backend/internal/config"
-	"github.com/controlewise/backend/internal/database"
-	"github.com/controlewise/backend/internal/jobs"
-	"github.com/controlewise/backend/internal/workflow"
+	"github.com/controlwise/backend/internal/config"
+	"github.com/controlwise/backend/internal/database"
+	"github.com/controlwise/backend/internal/jobs"
+	"github.com/controlwise/backend/internal/workflow"
 	"github.com/hibiken/asynq"
 	"github.com/joho/godotenv"
 )

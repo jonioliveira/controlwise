@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/controlewise/backend/internal/config"
+	"github.com/controlwise/backend/internal/config"
 	"github.com/redis/go-redis/v9"
 )
 

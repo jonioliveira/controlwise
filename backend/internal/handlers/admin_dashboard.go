@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/controlewise/backend/internal/services"
-	"github.com/controlewise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/services"
+	"github.com/controlwise/backend/internal/utils"
 )
 
 type AdminDashboardHandler struct {

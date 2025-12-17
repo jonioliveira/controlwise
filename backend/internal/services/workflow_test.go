@@ -103,9 +103,9 @@ func TestRenderTemplateString(t *testing.T) {
 			data: map[string]interface{}{
 				"greeting": "Hello",
 				"name":     "João",
-				"place":    "ControleWise",
+				"place":    "controlwise",
 			},
-			expected: "Hello João, welcome to ControleWise!",
+			expected: "Hello João, welcome to controlwise!",
 		},
 		{
 			name:     "repeated variable",

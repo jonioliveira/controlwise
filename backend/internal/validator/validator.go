@@ -7,7 +7,7 @@ import (
 
 	"github.com/go-playground/validator/v10"
 
-	apperrors "github.com/controlewise/backend/internal/errors"
+	apperrors "github.com/controlwise/backend/internal/errors"
 )
 
 var validate *validator.Validate

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/controlewise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/utils"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
 )

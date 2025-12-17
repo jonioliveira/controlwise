@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/controlewise/backend/internal/config"
-	"github.com/controlewise/backend/internal/database"
+	"github.com/controlwise/backend/internal/config"
+	"github.com/controlwise/backend/internal/database"
 )
 
 type Services struct {

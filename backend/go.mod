@@ -1,4 +1,4 @@
-module github.com/controlewise/backend
+module github.com/controlwise/backend
 
 go 1.25
 

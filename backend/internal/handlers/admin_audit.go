@@ -6,8 +6,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/controlewise/backend/internal/services"
-	"github.com/controlewise/backend/internal/utils"
+	"github.com/controlwise/backend/internal/services"
+	"github.com/controlwise/backend/internal/utils"
 )
 
 type AdminAuditHandler struct {

@@ -1,11 +1,11 @@
-# ControleWise - Root Makefile
+# controlwise - Root Makefile
 # Container commands use Podman
 
 .PHONY: help up down logs ps restart clean db-shell redis-shell
 
 # Default target
 help:
-	@echo "ControleWise - Available commands:"
+	@echo "controlwise - Available commands:"
 	@echo ""
 	@echo "Container Management (Podman):"
 	@echo "  make up          - Start all services"
@@ -53,16 +53,16 @@ clean:
 
 # Open PostgreSQL shell
 db-shell:
-	podman exec -it controlewise-postgres psql -U controlewise -d controlewise
+	podman exec -it controlwise-postgres psql -U controlwise -d controlwise
 
 # Open Redis CLI
 redis-shell:
-	podman exec -it controlewise-redis redis-cli
+	podman exec -it controlwise-redis redis-cli
 
 # Check service health
 health:
 	@echo "PostgreSQL:"
-	@podman exec controlewise-postgres pg_isready -U controlewise || echo "Not running"
+	@podman exec controlwise-postgres pg_isready -U controlwise || echo "Not running"
 	@echo ""
 	@echo "Redis:"
-	@podman exec controlewise-redis redis-cli ping || echo "Not running"
+	@podman exec controlwise-redis redis-cli ping || echo "Not running"

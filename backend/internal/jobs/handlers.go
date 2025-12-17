@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/controlewise/backend/internal/database"
-	"github.com/controlewise/backend/internal/workflow"
+	"github.com/controlwise/backend/internal/database"
+	"github.com/controlwise/backend/internal/workflow"
 	"github.com/google/uuid"
 	"github.com/hibiken/asynq"
 )

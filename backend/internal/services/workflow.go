@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/controlewise/backend/internal/database"
-	"github.com/controlewise/backend/internal/models"
+	"github.com/controlwise/backend/internal/database"
+	"github.com/controlwise/backend/internal/models"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5"
 )
@@ -1891,8 +1891,8 @@ func GetSampleDataForEntityType(entityType string) map[string]interface{} {
 			"project_name":       "Remodelação Cozinha",
 			"budget_number":      "ORC-2025-001",
 			"budget_total":       "15000.00",
-			"budget_link":        "https://app.controlewise.pt/budgets/123",
-			"approval_link":      "https://app.controlewise.pt/budgets/123/approve",
+			"budget_link":        "https://app.controlwise.pt/budgets/123",
+			"approval_link":      "https://app.controlwise.pt/budgets/123/approve",
 			"organization_name":  "Construções ABC",
 			"organization_email": "info@construcoes-abc.pt",
 		}

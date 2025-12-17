@@ -10,10 +10,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/controlewise/backend/internal/config"
-	"github.com/controlewise/backend/internal/database"
-	"github.com/controlewise/backend/internal/router"
-	"github.com/controlewise/backend/internal/services"
+	"github.com/controlwise/backend/internal/config"
+	"github.com/controlwise/backend/internal/database"
+	"github.com/controlwise/backend/internal/router"
+	"github.com/controlwise/backend/internal/services"
 	"github.com/joho/godotenv"
 )
 

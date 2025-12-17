@@ -1,27 +1,27 @@
-# ControleWise Local Development Services
+# controlwise Local Development Services
 # Usage: podman compose up -d
 
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: controlewise-postgres
+    container_name: controlwise-postgres
     environment:
-      POSTGRES_USER: controlewise
-      POSTGRES_PASSWORD: controlewise
-      POSTGRES_DB: controlewise
+      POSTGRES_USER: controlwise
+      POSTGRES_PASSWORD: controlwise
+      POSTGRES_DB: controlwise
     ports:
       - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U controlewise"]
+      test: ["CMD-SHELL", "pg_isready -U controlwise"]
       interval: 10s
       timeout: 5s
       retries: 5
 
   redis:
     image: redis:7-alpine
-    container_name: controlewise-redis
+    container_name: controlwise-redis
     ports:
       - "6379:6379"
     volumes:
@@ -35,7 +35,7 @@ services:
   # Optional: MinIO for local S3-compatible storage
   minio:
     image: minio/minio:latest
-    container_name: controlewise-minio
+    container_name: controlwise-minio
     command: server /data --console-address ":9001"
     environment:
       MINIO_ROOT_USER: minioadmin
@@ -54,9 +54,9 @@ services:
   # Optional: PgAdmin for database management
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: controlewise-pgadmin
+    container_name: controlwise-pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@controlewise.io
+      PGADMIN_DEFAULT_EMAIL: admin@controlwise.io
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "5050:80"
